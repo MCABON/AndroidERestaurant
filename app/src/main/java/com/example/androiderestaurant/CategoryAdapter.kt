@@ -12,14 +12,8 @@ data class Category(val nom: String)
 class CategoryAdapter (val CategoryAfficher: Array<Category>, val listener: (Category) -> Unit)
     : RecyclerView.Adapter<CategoryAdapter.ViewHolder>()
 {
-    class ViewHolder(val element : View) : RecyclerView.ViewHolder(element)
-    {
-        fun bind(category: Category, listener: (Category) -> Unit) = with(itemView)
-        {
-            Log.i("XXX","bind")
-            itemView.findViewById<TextView>(R.id.ItemFood).text = category.nom
-            setOnClickListener{ listener(category)}
-        }
+    class ViewHolder(val view : View) : RecyclerView.ViewHolder(view) {
+        val itemFood = itemView.findViewById<TextView>(R.id.ItemFood)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): ViewHolder {
@@ -29,7 +23,8 @@ class CategoryAdapter (val CategoryAfficher: Array<Category>, val listener: (Cat
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Log.i("XXX","onBindViewHolder")
-        holder.bind(CategoryAfficher[position],listener)
+        holder.itemFood.text = CategoryAfficher[position].nom
+        holder.itemView.setOnClickListener{ listener(CategoryAfficher[position])}
     }
 
     override fun getItemCount(): Int = CategoryAfficher.size

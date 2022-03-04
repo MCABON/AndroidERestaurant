@@ -9,6 +9,11 @@
         android:id="@+id/ItemFood"
         android:layout_width="242dp"
         android:layout_height="45dp"
-        android:text="TextView" />
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 </FrameLayout>

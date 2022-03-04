@@ -21,7 +21,9 @@ class HomeActivity : AppCompatActivity() {
         val button2 = findViewById<Button>(R.id.dishes)
         button2.setOnClickListener { startCategory(getString(R.string.home_dishes)) }
         val button3 = findViewById<Button>(R.id.deserts)
-        button3.setOnClickListener { startCategory(getString(R.string.home_deserts)) }
+        button3.setOnClickListener {
+            startCategory(getString(R.string.home_deserts))
+        }
     }
 
     fun sendMessage(button: Button) {

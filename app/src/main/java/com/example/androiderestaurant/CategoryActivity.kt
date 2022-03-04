@@ -30,7 +30,7 @@ class CategoryActivity : AppCompatActivity() {
         }
         myRecycler = findViewById(R.id.CategoryList)
         myRecycler.layoutManager = LinearLayoutManager(this)
-        myRecycler.adapter = CategoryAdapter(category.toTypedArray()){
+        myRecycler.adapter = CategoryAdapter(category.toTypedArray()) {
             Toast.makeText(this,"Vous avez selectionné ${it.nom}", Toast.LENGTH_SHORT).show()
         }
 
