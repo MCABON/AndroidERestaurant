@@ -1,5 +1,6 @@
 package com.example.androiderestaurant
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.wifi.aware.AwareResources
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 class CategoryActivity : AppCompatActivity() {
     lateinit var myRecycler: RecyclerView
 
+    @SuppressLint("CutPasteId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_category)

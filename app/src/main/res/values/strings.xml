@@ -15,7 +15,12 @@
         <item>"Chirachi"</item>
         <item>"Dumburi"</item>
     </string-array>
-    <string name="details_sushi">bla blablabla</string>
+    <string name="details_sushi">Sushi détail</string>
+        <string-array name="Sushis">
+            <item>"Poisson"</item>
+            <item>Riz</item>
+            <item>Etc.....</item>
+        </string-array>
     <string name="details_poke">bla blablabla</string>
     <string name="details_chirachi">bla blablabla</string>
     <string name="details_dumburi">bla blablabla</string>
