@@ -2,12 +2,13 @@
     <string name="app_name">AndroidERestaurant</string>
     <string name="home_starters">Entrées</string>
     <string-array name="starters">
-        <item>"Salade de chou"</item>
-        <item>"Soupe miso"</item>
-        <item>"Sashimi"</item>
+        <item>Salade de chou</item>
+        <item>Soupe miso</item>
+        <item>Sashimi</item>
     </string-array>
     <string name="details_chou">bla blablabla</string>
     <string name="details_miso">bla blablabla</string>
+    <string name="details_sashimi">bla blablabla</string>
     <string name="home_dishes">Plats</string>
     <string-array name="dishes">
         <item>"Sushi"</item>
@@ -26,4 +27,6 @@
     </string-array>
     <string name="details_mochi">bla blablabla</string>
     <string name="details_litchi">bla blablabla</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

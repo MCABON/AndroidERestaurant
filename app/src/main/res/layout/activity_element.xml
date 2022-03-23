@@ -8,7 +8,7 @@
     tools:context=".ElementActivity">
 
     <TextView
-        android:id="@+id/ElementTitle"
+        android:id="@+id/elementTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -26,7 +26,7 @@
         tools:visibility="visible" />
 
     <TextView
-        android:id="@+id/ElementDetails"
+        android:id="@+id/elementDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
@@ -39,5 +39,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ElementTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/elementTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

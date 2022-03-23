@@ -33,8 +33,11 @@ class HomeActivity : AppCompatActivity() {
 
     private fun startCategory(message: String) {
         val intent = Intent(this, CategoryActivity::class.java).apply {
-            putExtra("12345", message)
+            putExtra(CATEGORY_KEY, message)
         }
         startActivity(intent)
+    }
+    companion object{
+        const val CATEGORY_KEY = "category"
     }
 }
