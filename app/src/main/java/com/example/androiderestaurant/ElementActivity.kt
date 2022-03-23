@@ -7,6 +7,7 @@ import android.widget.TextClock
 import android.widget.TextView
 import com.example.androiderestaurant.databinding.ActivityElementBinding
 import model.Items
+import androidx.viewpager2.widget.ViewPager2
 
 class ElementActivity : AppCompatActivity() {
     private lateinit var binding: ActivityElementBinding
@@ -19,8 +20,11 @@ class ElementActivity : AppCompatActivity() {
         val item = intent.getSerializableExtra(CategoryActivity.DETAILS_KEY) as Items
         binding.elementTitle.text = item.name_fr
         binding.elementDetails.text = item.ingredients.joinToString(", ", transform = { it.name_fr })
+        binding.elementPrice.text = item.prices[0].price + "€"
+        binding.viewSlider.adapter=FragmentAdapter(this,item.images)
 
-        Log.i("image", item.images.toString())
+
+        //Log.i("image", item.images.toString())
         /*setContentView(R.layout.activity_element)
         val textView = findViewById<TextView>(R.id.ElementDetails).apply{}
         val extra = intent.getStringExtra("12345")

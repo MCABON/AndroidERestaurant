@@ -24,8 +24,7 @@ class CategoryAdapter(val items: List<Items>, val mListener: (Items) -> Unit)  :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val menu = items[position]
         holder.dishTitle.text = menu.name_fr
-        holder.dishPrice.text = menu.prices[0].price
-        //holder.dishPrice.text = menu.prices[0].price +"€"
+        holder.dishPrice.text = menu.prices[0].price +"€"
         Picasso.get().load(menu.images[0].ifEmpty { null }).into(holder.imageDish)
 
         holder.itemView.setOnClickListener {
